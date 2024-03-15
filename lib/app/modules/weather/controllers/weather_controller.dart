@@ -61,7 +61,7 @@ class WeatherController extends GetxController {
         Constants.forecastWeatherApiUrl,
         RequestType.get,
         queryParameters: {
-          Constants.key: Constants.apiKey,
+          Constants.key: Constants.mApiKey,
           Constants.q: Get.arguments,
           Constants.days: days,
           Constants.lang: currentLanguage,

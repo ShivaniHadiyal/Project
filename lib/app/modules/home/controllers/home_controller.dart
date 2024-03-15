@@ -8,7 +8,8 @@ import '../../../data/models/weather_model.dart';
 import '../../../services/api_call_status.dart';
 import '../../../services/base_client.dart';
 import '../../../services/location_service.dart';
-import '../views/widgets/location_dialog.dart';
+import '../views/widget/location_dialog.dart';
+
 
 class HomeController extends GetxController {
   static HomeController get instance => Get.find();
@@ -59,7 +60,7 @@ class HomeController extends GetxController {
       Constants.currentWeatherApiUrl,
       RequestType.get,
       queryParameters: {
-        Constants.key: Constants.apiKey,
+        Constants.key: Constants.mApiKey,
         Constants.q: location,
         Constants.lang: currentLanguage,
       },
@@ -86,7 +87,7 @@ class HomeController extends GetxController {
         Constants.currentWeatherApiUrl,
         RequestType.get,
         queryParameters: {
-          Constants.key: Constants.apiKey,
+          Constants.key: Constants.mApiKey,
           Constants.q: city,
           Constants.lang: currentLanguage,
         },

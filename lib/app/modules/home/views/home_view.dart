@@ -3,6 +3,8 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_weather_app/app/modules/home/views/widget/home_shimmer.dart';
+import 'package:flutter_weather_app/app/modules/home/views/widget/weather_card.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:get/get.dart';
 
@@ -12,8 +14,7 @@ import '../../../components/api_error_widget.dart';
 import '../../../components/custom_icon_button.dart';
 import '../../../components/my_widgets_animator.dart';
 import '../controllers/home_controller.dart';
-import 'widgets/home_shimmer.dart';
-import 'widgets/weather_card.dart';
+
 
 class HomeView extends GetView<HomeController> {
   const HomeView({Key? key}) : super(key: key);
