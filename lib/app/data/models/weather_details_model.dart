@@ -78,7 +78,7 @@ class Astro {
   String moonrise;
   String moonset;
   String moonPhase;
-  String moonIllumination;
+  int moonIllumination;
   num isMoonUp;
   num isSunUp;
 

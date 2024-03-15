@@ -81,7 +81,7 @@ class HomeController extends GetxController {
   /// get weather arround the world
   getWeatherArroundTheWorld() async {
     weatherArroundTheWorld.clear();
-    final cities = ['London', 'Cairo', 'Alaska'];
+    final cities = ['Mumbai', 'Delhi', 'Goa'];
     await Future.forEach(cities, (city) {
       BaseClient.safeApiCall(
         Constants.currentWeatherApiUrl,
