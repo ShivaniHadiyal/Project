@@ -15,28 +15,6 @@ class HomeShimmer extends StatelessWidget {
           20.verticalSpace,
           Row(
             children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    ShimmerWidget.rectangular(
-                      width: 107.w,
-                      height: 24.h,
-                    ),
-                    8.verticalSpace,
-                    ShimmerWidget.rectangular(
-                      width: 197.w,
-                      height: 24.h,
-                    ),
-                  ],
-                ),
-              ),
-              20.horizontalSpace,
-              ShimmerWidget.circular(
-                width: 50.w,
-                height: 50.h,
-              ),
-              8.horizontalSpace,
               ShimmerWidget.circular(
                 width: 50.w,
                 height: 50.h,

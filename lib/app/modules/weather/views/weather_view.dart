@@ -151,30 +151,30 @@ class WeatherView extends GetView<WeatherController> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(Strings.weatherNow.tr, style: theme.textTheme.displayMedium),
-                        16.verticalSpace,
-                        SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            children: [
-                              WeatherDetailsItem(
-                                title: Strings.wind.tr,
-                                icon: Constants.wind,
-                                value: controller.weatherDetails.current.windMph.toInt().toString(),
-                                text: 'mph',
-                              ),
-                              16.horizontalSpace,
-                              WeatherDetailsItem(
-                                title: Strings.pressure.tr,
-                                icon: Constants.pressure,
-                                value: controller.weatherDetails.current.pressureIn.toInt().toString(),
-                                text: 'inHg',
-                                isHalfCircle: true,
-                              ),
-                            ],
-                          ),
-                        ),
-                        20.verticalSpace,
+                        // Text(Strings.weatherNow.tr, style: theme.textTheme.displayMedium),
+                        // 16.verticalSpace,
+                        // SingleChildScrollView(
+                        //   scrollDirection: Axis.horizontal,
+                        //   child: Row(
+                        //     children: [
+                        //       WeatherDetailsItem(
+                        //         title: Strings.wind.tr,
+                        //         icon: Constants.wind,
+                        //         value: controller.weatherDetails.current.windMph.toInt().toString(),
+                        //         text: 'mph',
+                        //       ),
+                        //       16.horizontalSpace,
+                        //       WeatherDetailsItem(
+                        //         title: Strings.pressure.tr,
+                        //         icon: Constants.pressure,
+                        //         value: controller.weatherDetails.current.pressureIn.toInt().toString(),
+                        //         text: 'inHg',
+                        //         isHalfCircle: true,
+                        //       ),
+                        //     ],
+                        //   ),
+                        // ),
+                        // 20.verticalSpace,
                         Text(Strings.hoursForecast.tr, style: theme.textTheme.displayMedium),
                         16.verticalSpace,
                         SizedBox(

@@ -37,24 +37,8 @@ class HomeView extends GetView<HomeController> {
                 children: [
                   20.verticalSpace,
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              Strings.helloAbdQader.tr,
-                              style: theme.textTheme.displayMedium,
-                            ),
-                            8.verticalSpace,
-                            Text(
-                              Strings.discoverTheWeather.tr,
-                              style: theme.textTheme.displayMedium,
-                            ),
-                          ],
-                        ),
-                      ),
-                      20.horizontalSpace,
                       CustomIconButton(
                         onPressed: () => controller.onChangeThemePressed(),
                         icon: GetBuilder<HomeController>(
@@ -65,16 +49,6 @@ class HomeView extends GetView<HomeController> {
                               : Icons.light_mode_outlined,
                             color: theme.iconTheme.color,
                           ),
-                        ),
-                        borderColor: theme.dividerColor,
-                      ),
-                      8.horizontalSpace,
-                      CustomIconButton(
-                        onPressed: () => controller.onChangeLanguagePressed(),
-                        icon: SvgPicture.asset(
-                          Constants.language,
-                          fit: BoxFit.none,
-                          color: theme.iconTheme.color,
                         ),
                         borderColor: theme.dividerColor,
                       ),
@@ -94,7 +68,7 @@ class HomeView extends GetView<HomeController> {
                         enlargeCenterPage: true,
                         onPageChanged: controller.onCardSlided,
                       ),
-                      itemCount: 3,
+                      itemCount: 2,
                       itemBuilder: (context, itemIndex, pageViewIndex) {
                         return WeatherCard(weather: controller.currentWeather);
                       },
@@ -110,7 +84,7 @@ class HomeView extends GetView<HomeController> {
                     builder: (_) => Center(
                       child: AnimatedSmoothIndicator(
                         activeIndex: controller.activeIndex,
-                        count: 3,
+                        count: 2,
                         effect: WormEffect(
                           activeDotColor: theme.primaryColor,
                           dotColor: theme.colorScheme.secondary,
