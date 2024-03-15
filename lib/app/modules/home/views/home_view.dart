@@ -37,16 +37,22 @@ class HomeView extends GetView<HomeController> {
                 children: [
                   20.verticalSpace,
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
+                      Expanded(
+                        child: Text(
+                          Strings.welcomeToWeatherApp.tr,
+                          style: theme.textTheme.displayMedium,
+                        ),
+                      ),
+                      20.horizontalSpace,
                       CustomIconButton(
                         onPressed: () => controller.onChangeThemePressed(),
                         icon: GetBuilder<HomeController>(
                           id: controller.themeId,
                           builder: (_) => Icon(
                             controller.isLightTheme
-                              ? Icons.dark_mode_outlined
-                              : Icons.light_mode_outlined,
+                                ? Icons.dark_mode_outlined
+                                : Icons.light_mode_outlined,
                             color: theme.iconTheme.color,
                           ),
                         ),

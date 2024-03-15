@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../app/data/local/my_shared_pref.dart';
-import 'ar_AR/ar_ar_translation.dart';
 import 'en_US/en_us_translation.dart';
 
 class LocalizationService extends Translations {
@@ -35,7 +34,7 @@ class LocalizationService extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
     'en_US': enUs,
-    'ar_AR': arAR,
+    // 'ar_AR': arAR,
   };
 
   /// check if the language is supported

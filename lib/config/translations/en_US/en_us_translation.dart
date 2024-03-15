@@ -21,7 +21,7 @@ const Map<String, String> enUs = {
   Strings.alreadyHaveAnAccount : 'Already have an account? ',
   Strings.login : 'Login',
 
-  Strings.helloAbdQader : 'Hello AbdQader',
+  Strings.welcomeToWeatherApp : 'Welcome To The WeatherApp',
   Strings.discoverTheWeather : 'Discover the weather',
   Strings.aroundTheWorld : 'Around the world',
 

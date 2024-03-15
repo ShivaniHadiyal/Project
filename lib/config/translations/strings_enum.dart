@@ -19,7 +19,7 @@ class Strings {
   static const String alreadyHaveAnAccount = 'alreadyHaveAnAccount';
   static const String login = 'login';
 
-  static const String helloAbdQader = 'helloAbdQader';
+  static const String welcomeToWeatherApp = 'welcomeToWeatherApp';
   static const String discoverTheWeather = 'discoverTheWeather';
   static const String aroundTheWorld = 'aroundTheWorld';
 
